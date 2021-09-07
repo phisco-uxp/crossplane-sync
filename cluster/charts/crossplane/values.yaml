@@ -6,7 +6,7 @@ deploymentStrategy: RollingUpdate
 
 image:
   # -- Crossplane image.
-  repository: crossplane/crossplane
+  repository: upbound/crossplane
   # -- Crossplane image tag: if not set, appVersion field from Chart.yaml is used.
   tag: ""
   # -- Crossplane image pull policy used in all containers.
@@ -167,7 +167,7 @@ xfn:
   enabled: false
   # -- Image for xfn: if tag is not set appVersion field from Chart.yaml is used.
   image:
-    repository: crossplane/xfn
+    repository: upbound/xfn
     tag: ""
     pullPolicy: IfNotPresent
   # -- List of additional args for the xfn container.
